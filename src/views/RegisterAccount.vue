@@ -11,18 +11,19 @@ export default {
   },
   methods: {
     submitData() {
-      fetch('http://localhost:3000/register', {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ ...this.userData }),
-      })
-        .then(res => res.json())
-        .then(data => {
-          console.log(data);
-        })
+      console.log('fire');
+      // fetch('http://localhost:3000/register', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Accept': 'application/json',
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify({ ...this.userData }),
+      // })
+      //   .then(res => res.json())
+      //   .then(data => {
+      //     console.log(data);
+      //   })
     },
   },
 };
